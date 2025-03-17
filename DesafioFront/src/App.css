@@ -1,0 +1,390 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Layout responsivo em 9:16 */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background-color: #FFD700; /* Fundo amarelo vibrante */
+  background-image: url('back.jpg'); /* Imagem de fundo Pop Art */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Garantir que o root tenha a proporção 9:16 */
+#root {
+  width: 100vw;
+  height: calc(100vw * (16 / 9)); /* Ajuste a altura de acordo com a largura */
+  max-height: 100vh;
+}
+
+/* Estilo Pop Art de fundo */
+html, body {
+  background-color: #FFD700; /* Fundo amarelo vibrante */
+  background-image: url('back.jpg'); /* Imagem de fundo Pop Art */
+  background-size: 30px 30px; /* Tamanho do padrão */
+  background-position: 0 0; /* Posição do padrão */
+}
+
+/* Container principal */
+.container {
+  background-image: url('back.png'); /* Imagem de fundo Pop Art */
+  background-size: 30px 30px; /* Tamanho do padrão */
+  background-position: 0 0; /* Posição do padrão */
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Texto secundário */
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Campos de input */
+.input-field {
+  width: 80%;
+  max-width: 300px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Botões */
+button {
+  width: 80%;
+  max-width: 300px;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: #2575fc;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #6a11cb;
+  transform: scale(1.05);
+}
+
+/* Mensagem de erro */
+.error-text {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Ajuste para telas em paisagem (força retrato) */
+@media (orientation: landscape) {
+  body {
+    transform: rotate(90deg);
+    transform-origin: center center;
+    width: 100vh;
+    height: 100vw;
+  }
+}
+
+/* Estilos para a Home */
+.home-container {
+  width: 90%;
+  max-width: 600px;
+  height: 85%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título principal */
+.home-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Texto secundário */
+.home-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Botões */
+.home-container button {
+  width: 80%;
+  max-width: 300px;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: #2575fc;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.home-container button:hover {
+  background: #6a11cb;
+  transform: scale(1.05);
+}
+
+/* Estilos para a página de Registro */
+.register-container {
+  width: 90%;
+  max-width: 600px;
+  height: 85%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título da página */
+.register-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Texto de instrução */
+.register-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Campos de input */
+.input-field {
+  width: 80%;
+  max-width: 300px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Botão de registro */
+.register-container button {
+  width: 80%;
+  max-width: 300px;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: #2575fc;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.register-container button:hover {
+  background: #6a11cb;
+  transform: scale(1.05);
+}
+
+/* Estilos para a página de Início (Start) */
+.start-container {
+  width: 90%;
+  max-width: 600px;
+  height: 85%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título principal */
+.start-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Texto secundário */
+.start-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Botão para iniciar o quiz */
+.start-container button {
+  width: 80%;
+  max-width: 300px;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: #2575fc;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.start-container button:hover {
+  background: #6a11cb;
+  transform: scale(1.05);
+}
+
+/* Estilos para a página do Quiz */
+.quiz-container {
+  width: 90%;
+  max-width: 600px;
+  height: 85%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título da pergunta */
+.quiz-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Estilização das opções de resposta */
+.quiz-container button {
+  width: 80%;
+  max-width: 300px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: #2575fc;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 8px 0;
+}
+
+.quiz-container button:hover {
+  background: #6a11cb;
+  transform: scale(1.05);
+}
+
+/* Mensagem de feedback (certo ou errado) */
+.feedback-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: green;
+  margin-top: 15px;
+}
+
+/* Mensagem de carregamento */
+.loading-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Mensagem de alerta (quando não há respostas disponíveis) */
+.warning-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: red;
+}
+
+/* Estilos para a página de Finalização (Finish) */
+.finish-container {
+  width: 90%;
+  max-width: 600px;
+  height: 85%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título da tela de finalização */
+.finish-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Mensagem de conclusão */
+.finish-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Botão de voltar para o início */
+.finish-container button {
+  width: 80%;
+  max-width: 300px;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: #2575fc;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.finish-container button:hover {
+  background: #6a11cb;
+  transform: scale(1.05);
+}
